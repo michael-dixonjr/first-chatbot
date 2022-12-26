@@ -85,7 +85,7 @@ const handleSubmit = async (e) => {
     // messageDiv.innerHTML = "umm"
     loader(messageDiv)
     //fetch data from the server to get the bots response
-    const response = await fetch('https://localhost:5000 ', {
+    const response = await fetch('https://chatbot-6li2.onrender.com', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
