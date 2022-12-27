@@ -15,7 +15,7 @@ const openai = new OpenAIApi(configuration);
 
 //initializing express application
 const app = express();
-app.use(cors()); //allows use of cross origin requests, so the server can be called from the frontend
+app.use(cors({origin:"*"})); //allows use of cross origin requests, so the server can be called from the frontend
 app.use(express.json());//allows json to be passed from the frontend to the backend
 
 //dummy route, receives data from the frontend
