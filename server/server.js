@@ -21,7 +21,7 @@ app.use(express.json());//allows json to be passed from the frontend to the back
 //dummy route, receives data from the frontend
 app.get('/', async (req, res) => {
     res.status(200).send({
-        message: 'Hello from Codex',
+        message: 'Hey its working',
     })
 });
 
